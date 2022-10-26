@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#full-screen {
+    background-image: linear-gradient(68.4deg, rgba(99, 251, 215, 1) -0.4%, rgba(5, 222, 250, 1) 100.2%);
+}
+
+.top-search {
+    width: 86%;
+    height: 10%;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+
+.Text-Custom {
+    width: 100%;
+    border: 0px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: transparent;
+    font-size: 30px;
+    color: black;
+}
+
+.Text-Custom:focus {
+    border: 0px;
+    background-color: transparent;
+}
+
+.main-custom {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.map-custom {
+    width: 60%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.mark-custom {
+    width: 30%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 30px;
+
+}
+
+.element-custom {
+    width: 90%;
+    height: 80%;
+    overflow-y: scroll;
+    margin-top: 20px;
+}
+
+.child-custom {
+    width: 90%;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+
+.child-custom>h1{
+    max-width: 60%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #485563 0%, #29323c 51%, #485563 100%);
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    font-size: 10px;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-Custom{
+    width: 9%;
+    right: 0; 
+    border-radius: 50px;
+    margin-right: 40px;
+    border: 0px transparent;
+    background-color: transparent;
+    background-image: url(https://pixsector.com/cache/e7836840/ave6d43d85eb121839a10.png);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1400px) {
+    #full-screen{
+        height: 1800px !important;
+    }
+    .main-custom {
+        height: 1500px !important;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .top-search{
+        height: 4%;
+    }
+    .map-custom{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .mark-custom{
+        width: 90%;
+    }
+}
